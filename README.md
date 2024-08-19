@@ -1,4 +1,4 @@
-# GenLV [[Paper Link]]
+# GenLV [[Paper Link]](http://arxiv.org/abs/2408.08601)
 
 ### Learning A Low-Level Vision Generalist via Visual Task Prompt
 Xiangyu Chen, Yihao Liu, Yuandong Pu, Wenlong Zhang, Jiantao Zhou, Yu Qiao and Chao Dong
@@ -9,8 +9,7 @@ Xiangyu Chen, Yihao Liu, Yuandong Pu, Wenlong Zhang, Jiantao Zhou, Yu Qiao and C
       title={Learning A Low-Level Vision Generalist via Visual Task Prompt},
       author={Xiangyu Chen and Yihao Liu and Yuandong Pu and Wenlong Zhang and Jiantao Zhou and Yu Qiao and Chao Dong},
       booktitle={ACM Multimedia 2024},
-      year={2024},
-      url={https://openreview.net/forum?id=tgSl2DkJCQ}
+      year={2024}
     }
 
 **Codes and models will be available soon...**
