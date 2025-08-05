@@ -3,11 +3,11 @@
 
 Xiangyu Chen*, Kaiwen Zhu*, Yuandong Pu*, Shuo Cao, Xiaohui Li, Wenlong Zhang, Yihao Liu, Yu Qiao, Jiantao Zhou and Chao Dong
 
-### Quick Start
+## Quick Start
 
-### How to Inference
+## How to Inference
 
-### Citation
+## Citation
 
     @article{chen2025exploring,
       title={Exploring Scalable Unified Modeling for General Low-Level Vision},

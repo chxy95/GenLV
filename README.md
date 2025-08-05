@@ -3,14 +3,15 @@
 
 Xiangyu Chen, Yihao Liu, Yuandong Pu, Wenlong Zhang, Jiantao Zhou, Yu Qiao and Chao Dong
 
-### Exploring Scalable Unified Modeling for General Low-Level Vision [[Extended Journal Version]](http://arxiv.org/abs/2507.14801)
+### Exploring Scalable Unified Modeling for General Low-Level Vision [[Extended Version]](http://arxiv.org/abs/2507.14801)
 
-Xiangyu Chen*, Kaiwen Zhu*, Yuandong Pu*, Shuo Cao, Xiaohui Li, Wenlong Zhang, Yihao Liu, Yu Qiao, Jiantao Zhou and Chao Dong
+Xiangyu Chen*, Kaiwen Zhu*, Yuandong Pu*, Shuo Cao, Xiaohui Li, Wenlong Zhang, Yihao Liu, Yu Qiao,  
+Jiantao Zhou and Chao Dong
 
-### Overview
-<img src="https://raw.githubusercontent.com/chxy95/GenLV/master/figures/overview.png" width="700"/>
+## Overview
+<img src="https://raw.githubusercontent.com/chxy95/GenLV/master/figures/overview.png" width="800"/>
 
-### Citation
+## Citations
 
     @inproceedings{chen2024learning,
       title={Learning A Low-Level Vision Generalist via Visual Task Prompt},
