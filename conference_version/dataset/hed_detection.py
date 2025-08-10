@@ -1,0 +1,1 @@
+from controlnet_aux import HEDdetector

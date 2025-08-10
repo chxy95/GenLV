@@ -4,8 +4,18 @@
 Xiangyu Chen, Yihao Liu, Yuandong Pu, Wenlong Zhang, Jiantao Zhou, Yu Qiao and Chao Dong
 
 ### Quick Start
++ Environment
+  + pytorch>=1.7
+  + basicsr==1.4.2
++ Weights
+  + Download the weights from [this link](https://huggingface.co/Kaiwen-Zhu/GenLV/tree/main/GenLV-30/ckpt) and put them in `conference_version/ckpt`.
+
 
 ### How to Inference
+```sh
+cd conference_version
+python inference.py --model_size giant --input example/input.png --prompt_input example/prompt_input.png --prompt_target example/prompt_target.png --output_path example/prediction.png
+```
 
 ### Results
 
