@@ -18,6 +18,7 @@ python inference.py --model_size giant --input example/input.png --prompt_input 
 ```
 
 ### Results
+The results on testsets is available [this link](https://huggingface.co/Kaiwen-Zhu/GenLV/blob/main/GenLV-30/GenLV_results.zip).
 
 ### Citation
 
