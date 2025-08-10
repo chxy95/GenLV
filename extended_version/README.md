@@ -13,7 +13,7 @@ Xiangyu Chen*, Kaiwen Zhu*, Yuandong Pu*, Shuo Cao, Xiaohui Li, Wenlong Zhang, Y
 ### How to Inference
 ```sh
 cd extended_version
-python inference.py --model_size huge --input example/input.png --prompt_input example/prompt_input.png --prompt_target example/prompt_output.png
+python inference.py --model_size huge --input example/input.png --prompt_input example/prompt_input.png --prompt_target example/prompt_target.png --save_dir result
 ```
 
 ### Citation

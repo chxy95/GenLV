@@ -18,7 +18,7 @@ from evaluation.inference_with_prompt import *
 def get_args_parser():
     parser = argparse.ArgumentParser('GenLV100', add_help=False)
     parser.add_argument('--model', default='xrestormer_prompt_crossattn_huge', type=str, metavar='MODEL', help='Name of model to validation')
-    parser.add_argument('--output_dir', default='./results')
+    parser.add_argument('--save_dir', default='./results')
     parser.add_argument('--device', default='cuda', help='device to use for training / testing')
     parser.add_argument('--seed', default=0, type=int)
     parser.add_argument('--tta_option', default=0, type=int)
@@ -27,8 +27,9 @@ def get_args_parser():
     
     parser.add_argument('--prompt_input', type=str)
     parser.add_argument('--prompt_target', type=str)
-    parser.add_argument('--input', type=str)
-    parser.add_argument('--target', default=None, type=str)
+    parser.add_argument('--input_path', type=str)
+    parser.add_argument('--output_path', type=str)
+    parser.add_argument('--target_path', default=None, type=str)
 
     parser.set_defaults(autoregressive=False)
     return parser
@@ -113,12 +114,12 @@ def main(args):
     
     prompt_inp = read_img(args.prompt_input)
     prompt_tgt = read_img(args.prompt_target)
-    inp = read_img(args.input)
-    if args.target is not None:
-        tgt = read_img(args.target)
+    inp = read_img(args.input_path)
+    if args.target_path is not None:
+        tgt = read_img(args.target_path)
     else:
         tgt = None
-    save_dir = args.output_dir
+    save_dir = args.save_dir
     inference_single(model, save_dir, prompt_inp, prompt_tgt, inp, tgt, save_prompt=True)
 
         
@@ -126,13 +127,13 @@ if __name__ == '__main__':
     args = get_args_parser()
     args = args.parse_args()
     
-    # manually set
-    args.prompt_input = 'example/prompt_input.png'
-    args.prompt_target = 'example/prompt_target.png'
-    args.input = 'example/input.png'
-    args.target = 'example/target.png'  # optional
+    # # manually set
+    # args.prompt_input = 'example/prompt_input.png'
+    # args.prompt_target = 'example/prompt_target.png'
+    # args.input_path = 'example/input.png'
+    # args.target_path = 'example/target.png'  # optional
     
-    args.model_size = 'huge'
+    # args.model_size = 'huge'
     
     model_dict = {
         'base': {
@@ -152,6 +153,6 @@ if __name__ == '__main__':
     args.model = model_dict[args.model_size]['model']
     args.ckpt = model_dict[args.model_size]['ckpt']
     
-    if args.output_dir:
-        Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+    if args.save_dir:
+        Path(args.save_dir).mkdir(parents=True, exist_ok=True)
     main(args)
